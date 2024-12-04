@@ -1,9 +1,8 @@
-# RnaSeqTutorialXX
+# RnaSeqTutorial04
 
 ## Using this template
 
 1. Edit this README, change the title
-2. Edit the R/RnaSeqTutorials-package.R file, line 1, 23, 26, 27, 30 and 34
 3. Update the README installation info (dependencies, github directory), you can use the code in R/RnaSeqTutorials-package.R to build the dependencies list.
 4. Replace all XXX and XX with the tutorial and package name, respectively
 5. Edit the DESCRIPTION, change the XX and XXX and add the dependencies
@@ -17,7 +16,7 @@
 
 ---
 
-TITLE TO CHANGE
+Gene Set Enrichment Analysis (GSEA)
 
 ## Installation
 
@@ -25,14 +24,14 @@ In R do the following to install the dependencies
 
 ```R
 if(!require("BiocManager")) {install.packages("BiocManager")}
-BiocManager::install(c("here","learnr"))
+BiocManager::install(c("DOSE","dplyr","enrichplot","ggplot2","GOfuncR","here","learnr","org.Hs.eg.db","readr","tibble","topGO","UpSetR"))
 ```
 
 Then install the package using _e.g._ `pak`
 
  ```R
  if(!require("pak")){BiocManager::install("pak")}
- pak::pkg_install("UPSCb/Tutorial_XXX")
+ pak::pkg_install("UPSCb/Tutorial_04_gene_set_enrichment_analysis")
  ```
 
 ### Troubleshooting
@@ -47,7 +46,7 @@ If the above do not resolve the installation issue, then run this instead:
 
 ```R
 if(!require("pak")){BiocManager::install("devtools")}
-devtools::install_github("UPSCb/Tutorial_02_exploratory_data_analysis")
+devtools::install_github("UPSCb/Tutorial_04_gene_set_enrichment_analysis")
 ```
 
 ## Getting started
@@ -66,7 +65,7 @@ This is the first in a series of tutorials.
 To start the tutorial run:
 
 ```{r tutorial}
-learnr::run_tutorial("XXX", package = "RnaSeqTutorialXX")
+learnr::run_tutorial("04_gene_set_enrichment_analysis", package = "RnaSeqTutorial04")
 ```
 
 ## Accessing the code
@@ -76,11 +75,11 @@ learnr::run_tutorial("XXX", package = "RnaSeqTutorialXX")
 The tutorial is available as `.Rmd` files in the `tutorials` directory:
 
 ```{r tutorial list}
-dir(system.file(package="RnaSeqTutorialXX","tutorials"))
+dir(system.file(package="RnaSeqTutorial04","tutorials"))
 ```
 
 ```{r tutorial paths}
-list.files(path=system.file(package="RnaSeqTutorialXX","tutorials"),
+list.files(path=system.file(package="RnaSeqTutorial04","tutorials"),
            pattern="*.Rmd",
            recursive=TRUE)
 ```
@@ -90,7 +89,7 @@ list.files(path=system.file(package="RnaSeqTutorialXX","tutorials"),
 There may be script(s) available in the `scripts` directory:
 
 ```{r script paths}
-list.files(path=system.file(package="RnaSeqTutorialXX","scripts"),
+list.files(path=system.file(package="RnaSeqTutorial04","scripts"),
            pattern="*.R",
            recursive=TRUE)
 ```

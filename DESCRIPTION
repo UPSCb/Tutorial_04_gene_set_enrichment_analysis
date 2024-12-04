@@ -1,18 +1,28 @@
-Package: RnaSeqTutorialXX
+Package: RnaSeqTutorial04
 Type: Package
-Title: XXX
+Title: Gene Set Enrichment Analysis
 Version: 1.0.0
 Author: Nicolas Delhomme [aut, cre]
 Maintainer: Nicolas Delhomme <nicolas.delhomme@umu.se>
-Description: A package containing the XXX tutorial in a series that go from the Exploratory Data Analysis
+Description: A package containing the fourth tutorial in a series that go from the Exploratory Data Analysis
     to the Differential Gene Expression, Differential Transcript Usage and Gene Set Enrichment Analysis
 License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License
 Encoding: UTF-8
 LazyData: true
 Depends:
     R (>= 4.4.0),
+    DOSE (>= 4.0.0),
+    dplyr (>= 1.1.4),
+    enrichplot (>= 1.26.2),
+    ggplot2 (>= 3.5.1),
+    GOfuncR (>= 1.26.0),
     here (>= 1.0.1),
-    learnr (>= 0.11.5)
+    learnr (>= 0.11.5),
+    org.Hs.eg.db (>= 3.20.0),
+    readr (>= 2.1.5),
+    tibble (>= 3.2.1),
+    topGO (>= 2.58.0),
+    UpSetR (>= 1.4.0)
 Suggests: BiocStyle, knitr, rmarkdown
 VignetteBuilder: knitr
 RoxygenNote: 7.3.2
