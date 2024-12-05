@@ -876,8 +876,6 @@ This material is provided under the following license:
 
 `CC-BY-NC-SA 4.0:` _Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License_
 
-by **BN Bioinformatics Handelsbolag**
-
 <!-- Remember from Petri Törönen (UH)
 
 3: Why I dislike MIT GSEA method (long story):
