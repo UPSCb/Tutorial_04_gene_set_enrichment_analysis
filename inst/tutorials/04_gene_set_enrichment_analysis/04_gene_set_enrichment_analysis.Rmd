@@ -23,7 +23,9 @@ suppressPackageStartupMessages({
   library(DOSE)
   library(dplyr)
   library(enrichplot)
+  library(europepmc)
   library(ggplot2)
+  library(ggridges)  
   library(here)
   library(learnr)
   library(org.Hs.eg.db)
@@ -31,8 +33,6 @@ suppressPackageStartupMessages({
   library(tibble)
   library(topGO)
   library(UpSetR)
-  library(ggridges)
-  library(europepmc)
 })
 
 # options
