@@ -31,6 +31,8 @@ suppressPackageStartupMessages({
   library(tibble)
   library(topGO)
   library(UpSetR)
+  library(ggridges)
+  library(europepmc)
 })
 
 # options
@@ -775,7 +777,7 @@ barplot(edo, showCategory=20)
 
 As well as on the disease ontology. The previous method is a type of ORA, the second is a GSEA method of the competitive type (depends on a competitive null hypothesis which assumes the genes in a set do not have a stronger association with the experimental condition compared to randomly chosen genes outside the set)
 
-```{r DOSE, exercise=TRUE, exercise.eval=TRUE}
+```{r DOSE, exercise=TRUE, exercise.eval=FALSE}
 edo2 <- gseDO(sort(geneList,decreasing=TRUE))
 ```
 
