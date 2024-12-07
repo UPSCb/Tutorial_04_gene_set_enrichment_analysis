@@ -8,7 +8,7 @@ In R do the following to install the dependencies
 
 ```R
 if(!require("BiocManager")) {install.packages("BiocManager")}
-BiocManager::install(c("DOSE","dplyr","enrichplot","europepmc","ggplot2","ggridges","GOfuncR","here","learnr","org.Hs.eg.db","readr","tibble","topGO","UpSetR"))
+BiocManager::install(c("DOSE","dplyr","enrichplot","europepmc","ggplot2","ggridges","GOfuncR","here","learnr","org.Hs.eg.db","readr","Rgraphviz","tibble","topGO","UpSetR"))
 ```
 
 Then install the package using _e.g._ `pak`
@@ -31,13 +31,6 @@ If the above do not resolve the installation issue, then run this instead:
 ```R
 if(!require("pak")){BiocManager::install("devtools")}
 devtools::install_github("UPSCb/Tutorial_04_gene_set_enrichment_analysis")
-```
-
-### Re-install with pak
-
-```R
-pak::cache_clean()
-pak::pkg_install("UPSCb/Tutorial_04_gene_set_enrichment_analysis")
 ```
 
 ## Getting started
