@@ -641,6 +641,8 @@ Finally, we can do some visualisation of the results
 
 ```{r gofuncr-view, exercise=TRUE, exercise.eval=FALSE, exercise.lines=12, exercise.timelimit=300}
 
+library(GOfuncR)
+
 res <- goFunc$results[order(goFunc$results$FWER_overrep),]
 
 sel <- res$FWER_overrep <=0.01
