@@ -115,7 +115,7 @@ load(here("tutorials/04_gene_set_enrichment_analysis/www/data.rda"))
 # 
 # edo <- enrichDGN(names(de)[de <= 0.01])
 # 
-# edo2 <- gseDO(sort(geneList,decreasing=TRUE))
+# edo2 <- gseDO(sort(dropna(geneList),decreasing=TRUE))
 #
 # edox <- setReadable(edo, 'org.Hs.eg.db', 'ENTREZID')
 #
