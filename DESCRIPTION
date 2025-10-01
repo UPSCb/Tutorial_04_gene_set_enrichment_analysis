@@ -26,7 +26,7 @@ Depends:
     Rgraphviz (>= 2.48.0),
     shadowtext (>= 0.1.3),
     tibble (>= 3.2.1),
-    topGO (>= 2.58.0),
+    topGO (>= 2.56.0),
     UpSetR (>= 1.4.0)
 Suggests: BiocStyle, knitr, rmarkdown
 VignetteBuilder: knitr
