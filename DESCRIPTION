@@ -13,7 +13,7 @@ Depends:
     R (>= 4.4.0),
     DOSE (>= 3.30.5),
     dplyr (>= 1.1.4),
-    enrichplot (>= 1.26.2),
+    enrichplot (>= 1.24.0),
     europepmc (>= 0.4.3),
     ggplot2 (>= 3.5.1),
     ggraph (>= 2.2.1),
