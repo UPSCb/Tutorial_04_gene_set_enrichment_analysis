@@ -21,7 +21,7 @@ Depends:
     GOfuncR (>= 1.24.0),
     here (>= 1.0.1),
     learnr (>= 0.11.5),
-    org.Hs.eg.db (>= 3.20.0),
+    org.Hs.eg.db (>= 3.19.1),
     readr (>= 2.1.5),
     Rgraphviz (>= 2.48.0),
     shadowtext (>= 0.1.4),
